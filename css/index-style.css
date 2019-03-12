@@ -47,6 +47,12 @@ body{
     text-decoration: none;
 }
 
+.navigation-bar > a:hover {
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+
 .outerwear-img{
     display: flex;
     flex-flow: column nowrap;
@@ -76,6 +82,15 @@ body{
     color:black;
     text-decoration: none;
     border: 2px solid black;
+    padding: 10px 50px;
+
+}
+
+.shop-now-box > a:hover{
+    color:white;
+    background: black;
+    text-decoration: none;
+    border: 2px solid white;
     padding: 10px 50px;
 
 }

@@ -47,11 +47,17 @@ body{
     text-decoration: none;
 }
 
+.navigation-bar > a:hover{
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+
 .detail-box{
     margin-top: 60px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-around;
 
 }
 
@@ -65,6 +71,7 @@ body{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
+    width: 40%;
 }
 
 .description-box .price, .features, p, li{
@@ -85,6 +92,16 @@ body{
     width: 120px;
     margin-top: 20px;
     color:black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 8px 40px;
+}
+
+.description-box a:hover {
+    width: 120px;
+    margin-top: 20px;
+    color:white;
+    background: black;
     text-decoration: none;
     border: 2px solid black;
     padding: 8px 40px;
