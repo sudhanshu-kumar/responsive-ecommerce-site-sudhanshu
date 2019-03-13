@@ -163,6 +163,14 @@ body{
     font-weight: 500;
 }
 
+.different-add{
+    display: none;
+}
+
+.check-box input:checked + * .different-add{
+    display: block;
+}
+
 .expiry-box-cvv{
     display: flex;
     flex-flow: row nowrap;

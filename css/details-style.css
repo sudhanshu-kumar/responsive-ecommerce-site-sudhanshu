@@ -207,6 +207,7 @@ footer > a {
 
     .description-box{
         grid-area: 2;
+        width: 100%;
     }
 
     footer{
