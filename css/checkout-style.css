@@ -70,13 +70,56 @@ body{
     margin-bottom: 2em;
 }
 
+.input-box{
+    position: relative;
+    text-align: center;
+}
+
+.input-box > label{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 11px;
+    font-size: 0.9em;
+    transition: 0.2s;
+    visibility: hidden;
+}
+
+.input-box > input{
+    outline: none;
+}
+
+
+.input-box > input:focus~label, .input-box > input:valid~label {
+    visibility: visible;
+    top: -25px;
+    font-size: 1em;
+}
+
+.input-box > input:focus::placeholder{
+    visibility: hidden;
+}
+
+.input-box .transform hr{
+    width: 0;
+    height: 4px;
+    background: black;
+    position: relative;
+    top: -36px;
+    transition: all ease-in-out .15s;
+}
+
+.input-box > input:focus > .transform hr{
+    width: 100%;
+}
+
 .state-zip{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
 
-.state-zip input{
+.state-zip .input-box{
     width: 48%;
 }
 

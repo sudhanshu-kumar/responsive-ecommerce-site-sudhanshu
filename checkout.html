@@ -19,74 +19,110 @@
         <h3>Checkout</h3>
         <p>Shop is a demo app - form data will not be sent</p>
     </div>
-        <form action="#" name="Account Information" class="customer-details">
-            <div class="acc-info">
-                <h4>Account Information</h4>
+    <form action="#" name="Account Information" class="customer-details">
+        <div class="acc-info">
+            <h4>Account Information</h4>
+            <div class="input-box">
                 <input type="email" placeholder="Email" required>
+                <span class="transform"></span><br>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-box">
                 <input type="text" placeholder="Phone Number" required>
-                <h4>Shopping Address</h4>
+                <span class="transform"><hr></span><br>
+                <label for="phone">Phone Number</label>
+            </div>
+            <h4>Shopping Address</h4>
+            <div class="input-box">
                 <input type="text" placeholder="Address" required>
+                <span class="transform"></span><br>
+                <label for="address">Address</label>
+            </div>
+            <div class="input-box">
                 <input type="text" placeholder="City" required>
-                <div class="state-zip">
+                <span class="transition"></span><br>
+                <label for="city">City</label>
+            </div>
+            <div class="state-zip">
+                <div class="input-box">
                     <input type="text" placeholder="State/Province" required>
+                    <span class="transform"></span><br>
+                    <label for="state/province">State/Province</label>
+                </div>
+                <div class="input-box">
                     <input type="text" placeholder="Zip" required>
-                </div>
-                <h4 class="country">Country</h4>
-                <select>
-                    <option value="US">United States</option>
-                    <option value="Canada">Canada</option>
-                </select>
-                <h4>Billing Address</h4>
-                <div class="check-box">
-                    <input type="checkbox">
-                    <h5>Use different billing address</h5>
+                    <span class="transform"></span><br>
+                    <label for="zip">Zip</label>
                 </div>
             </div>
-            <div class="acc-info">
-                <h4>Payment Method</h4>
+            <h4 class="country">Country</h4>
+            <select>
+                <option value="US">United States</option>
+                <option value="Canada">Canada</option>
+            </select>
+            <h4>Billing Address</h4>
+            <div class="check-box">
+                <input type="checkbox">
+                <h5>Use different billing address</h5>
+            </div>
+        </div>
+        <div class="acc-info">
+            <h4>Payment Method</h4>
+            <div class="input-box">
                 <input type="text" placeholder="Cardholder Name" required>
-                <input type="text" placeholder="Card Number" required>
-                <h4 class="expiry">Expiry</h4>
-                <div class="expiry-box-cvv">
-                    <select>
-                        <option selected value='1'>Janaury</option>
-                        <option value='2'>February</option>
-                        <option value='3'>March</option>
-                        <option value='4'>April</option>
-                        <option value='5'>May</option>
-                        <option value='6'>June</option>
-                        <option value='7'>July</option>
-                        <option value='8'>August</option>
-                        <option value='9'>September</option>
-                        <option value='10'>October</option>
-                        <option value='11'>November</option>
-                        <option value='12'>December</option>
-                    </select>
-                    <select>
-                        <option value="2018">2018</option>
-                        <option value="2019">2019</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                    </select>
-                    <input type="text" placeholder="CVV" required>
-                </div>
-                <h4 class="order-sum">Order Summary</h4>
-                <div class="prod-name-price-box">
-                    <h5>Men's Tech Shell Full-Zip</h5>
-                    <h5>$50.20</h5>
-                </div>
-                <div class="prod-name-price-box">
-                    <h5>Total</h5>
-                    <h5>$50.20</h5>
-                </div>  
-                <input class="place-order" type="submit" value="PLACE ORDER">
+                <span class="transform"></span><br>
+                <label for="Cardholder name">Cardholder Name</label>
             </div>
-        </form>
+            <div class="input-box">
+                <input type="text" placeholder="Card Number" required>
+                <span class="transform"></span><br>
+                <label for="card number">Card Number</label>
+            </div>
+            <h4 class="expiry">Expiry</h4>
+            <div class="expiry-box-cvv">
+                <select>
+                    <option selected value='1'>Janaury</option>
+                    <option value='2'>February</option>
+                    <option value='3'>March</option>
+                    <option value='4'>April</option>
+                    <option value='5'>May</option>
+                    <option value='6'>June</option>
+                    <option value='7'>July</option>
+                    <option value='8'>August</option>
+                    <option value='9'>September</option>
+                    <option value='10'>October</option>
+                    <option value='11'>November</option>
+                    <option value='12'>December</option>
+                </select>
+                <select>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+                <div class="input-box">
+                    <input type="text" placeholder="CVV" required>
+                    <span class="transform"></span><br>
+                    <label for="cvv">CVV</label>
+                </div>
+            </div>
+            <h4 class="order-sum">Order Summary</h4>
+            <div class="prod-name-price-box">
+                <h5>Men's Tech Shell Full-Zip</h5>
+                <h5>$50.20</h5>
+            </div>
+            <div class="prod-name-price-box">
+                <h5>Total</h5>
+                <h5>$50.20</h5>
+            </div>
+            <input class="place-order" type="submit" value="PLACE ORDER">
+        </div>
+    </form>
     <footer>
         <h2><a href="#">Made by Polymer</a></h2>
         <a href="#">DEMO ONLY</a>
