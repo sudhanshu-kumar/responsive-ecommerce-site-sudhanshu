@@ -73,6 +73,8 @@ body{
 .input-box{
     position: relative;
     text-align: center;
+    display: inline-block;
+    width: 100%;
 }
 
 .input-box > label{
@@ -81,7 +83,7 @@ body{
     top: 0;
     padding-top: 11px;
     font-size: 0.9em;
-    transition: 0.2s;
+    transition: 0.1s;
     visibility: hidden;
 }
 
@@ -89,27 +91,32 @@ body{
     outline: none;
 }
 
+.input-box > input::placeholder{
+    font-size: 1.2em;
+}
+
 
 .input-box > input:focus~label, .input-box > input:valid~label {
     visibility: visible;
     top: -25px;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .input-box > input:focus::placeholder{
     visibility: hidden;
 }
 
-.input-box .transform hr{
-    width: 0;
-    height: 4px;
+.input-box .transform{
+    display: inline-block;
+    width: 0px;
+    height: 2px;
     background: black;
     position: relative;
-    top: -36px;
+    top: -39px;
     transition: all ease-in-out .15s;
 }
 
-.input-box > input:focus > .transform hr{
+.input-box > input:focus + .transform{
     width: 100%;
 }
 
@@ -152,6 +159,8 @@ body{
 .check-box h5{
     margin-top: 0;
     align-self: center;
+    font-size: 0.9em;
+    font-weight: 500;
 }
 
 .expiry-box-cvv{
