@@ -52,9 +52,12 @@ body{
 .customer-details{
     display: flex;
     flex-flow: row;
-    justify-content: space-around; 
-
+    justify-content: center; 
 }
+
+/* .acc-info{
+    width: 100%;
+} */
 
 .acc-info input{
     width: 100%;
@@ -67,7 +70,11 @@ body{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+}
+
+.box-label, .expiry{
+    margin-top: 0;
 }
 
 .input-box{
@@ -75,6 +82,7 @@ body{
     text-align: center;
     display: inline-block;
     width: 100%;
+    margin-bottom: -2em;
 }
 
 .input-box > label{
@@ -112,11 +120,15 @@ body{
     height: 2px;
     background: black;
     position: relative;
-    top: -39px;
+    top: -26px;
     transition: all ease-in-out .15s;
 }
 
-.input-box > input:focus + .transform{
+.input-box .transition{
+    top: -14px;
+}
+
+.input-box > input:focus + .transform, .input-box > select:focus + .transition{
     width: 100%;
 }
 
@@ -140,6 +152,7 @@ body{
     width: 100%;
     border: none;
     border-bottom: 1px solid gray;
+    outline: none;
 }
 
 .check-box{
@@ -177,11 +190,16 @@ body{
     justify-content: space-between;
 }
 
-.expiry-box-cvv select{
+.expiry-box-cvv .input-box select{
     margin-right: 0.4em;
+    width: 94%;
     height: 2.7em;;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.expiry-box-cvv .input-box > select:focus + .transition{
+    width: 94%;
 }
 
 .prod-name-price-box{
@@ -196,7 +214,7 @@ body{
 }
 
 .acc-info .order-sum{
-    margin-top: 0.4em;
+    margin-top: 1.8em;
     margin-bottom: 0.2em;
 }
 
@@ -208,6 +226,10 @@ body{
     border: 2px solid black;
     background: white;
     padding: 8px 30px;
+}
+
+.payment-info{
+    padding-left: 90px;
 }
 
 
