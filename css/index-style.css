@@ -70,12 +70,14 @@ body{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    margin-bottom: 1.2em;
 }
 
 .shop-now-box > h2{
     font-size: 1.3em;
     font-weight: 500;
-    margin: 32px 0;
+    margin-top: 0.4em;
+    margin-bottom: 0.8em;
 }
 
 .shop-now-box > a {
@@ -96,7 +98,7 @@ body{
 }
 
 .tshirts-box{
-    margin-top: 50px;
+    margin-top: 1.4em;
     display: flex;
     flex-flow: row nowrap;
 }
