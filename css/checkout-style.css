@@ -288,6 +288,10 @@ footer > a {
         border: none;
     }
 
+    .payment-info{
+        padding-left: 0px;
+    }
+
     footer{
         display: none;
     }
